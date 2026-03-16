@@ -1,0 +1,24 @@
+directories:
+  output: dist_electron
+  buildResources: build
+appId: com.eliment.lifeos
+productName: Life OS
+files:
+  - filter:
+      - dist/**/*
+      - electron/**/*
+win:
+  target: nsis
+  icon: public/favicon.ico
+nsis:
+  oneClick: false
+  allowToChangeInstallationDirectory: true
+  perMachine: false
+  createDesktopShortcut: true
+  createStartMenuShortcut: true
+  artifactName: Life.OS.Setup.exe
+protocols:
+  - name: Life OS URL Scheme
+    schemes:
+      - lifeos
+electronVersion: 28.3.3
