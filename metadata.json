@@ -1,0 +1,7 @@
+{
+  "name": "Life OS",
+  "description": "Minimalist stoic management platform with AI grounding insights for long-term clarity.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
